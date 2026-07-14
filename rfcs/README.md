@@ -5,6 +5,6 @@
 | RFC | 标题 | 状态 | 依赖 |
 | --- | --- | --- | --- |
 | [0000](0000-rfc-process.md) | MindHub RFC 流程 | Accepted | 无 |
-| [0001](0001-mindhub-manifesto.md) | MindHub Manifesto | Draft | RFC-0000 |
+| [0001](0001-mindhub-manifesto.md) | MindHub Manifesto | Review | RFC-0000 |
 
 新提案请从 [RFC 模板](template.md) 开始。只有最终决策者可以将 RFC 状态改为 Accepted 或 Rejected。
