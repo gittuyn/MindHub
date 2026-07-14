@@ -248,6 +248,8 @@ Capture the original source hash from Git and compare it with the working tree:
 test "$(git show 54036f2:Conception.md | sha256sum | cut -d' ' -f1)" = "$(sha256sum Conception.md | cut -d' ' -f1)"
 for file in rfcs/README.md rfcs/0000-rfc-process.md rfcs/template.md rfcs/0001-mindhub-manifesto.md; do test -s "$file"; done
 for link in 0000-rfc-process.md 0001-mindhub-manifesto.md template.md; do rg -q "$link" rfcs/README.md; done
+rg -q '^## 术语$' rfcs/0001-mindhub-manifesto.md
+rg -q '^## 详细设计$' rfcs/0001-mindhub-manifesto.md
 test -z "$(rg -n 'T''BD|T''ODO|XXXX|PLACEHOLDER' rfcs || true)"
 git diff --check
 ```
@@ -277,4 +279,3 @@ git ls-remote origin refs/heads/main
 ```
 
 Expected: the working tree is clean, `main` is aligned with `origin/main`, and the remote hash matches `git rev-parse HEAD`.
-
