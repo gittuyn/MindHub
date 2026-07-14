@@ -8,6 +8,7 @@
 | 状态 | Draft |
 | 创建日期 | <YYYY-MM-DD> |
 | 评审截止日期 | 不适用（Draft） |
+| 决策日期 | 不适用（仅 Accepted / Rejected 时填写） |
 | 最终决策者 | gittuyn |
 | 依赖 | <RFC 编号或“无”> |
 
